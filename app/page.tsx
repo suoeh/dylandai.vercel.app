@@ -1,6 +1,6 @@
 import About from "./components/About"
-import Skills from "./components/Skills"
 import Projects from "./components/Projects"
+import OtherCoolStuff from "./components/OtherCoolStuff"
 import PageTransition from "./components/PageTransition"
 import ParallaxBackground from "./components/ParallaxBackground"
 
@@ -11,8 +11,8 @@ export default function Home() {
         <main className="container mx-auto px-4">
           <ParallaxBackground/>
           <About />
-          <Skills />
           <Projects />
+          <OtherCoolStuff />
         </main>
       </div>
     </PageTransition>
