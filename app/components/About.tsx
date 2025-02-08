@@ -27,7 +27,7 @@ export default function About() {
             National medalist in competitive programming.<br />
             Machine Learning Consultant @ Cohere on top of school.<br />
             Undying love for problem solving and growth.<br /> <br /> <br />
-            Scroll down to see my story.
+            If you're seeing this, I am still editing this page.
           </p>
           <div className="flex justify-center space-x-8">
             <SocialLink href="https://linkedin.com/in/dyland06" Icon={Linkedin} title="LinkedIn" />
@@ -49,7 +49,7 @@ function SocialLink({ href, Icon, title }: { href: string; Icon: React.Component
       rel="noopener noreferrer"
       className="social-link flex items-center group hover:text-blue-600 transition-transform duration-200 hover:scale-110"
     >
-      <Icon className="w-5 h-5 mr-2" />
+      
       <span className="font-medium">{title}</span>
     </Link>
   )
