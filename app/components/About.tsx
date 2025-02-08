@@ -49,8 +49,8 @@ function SocialLink({ href, Icon, title }: { href: string; Icon: React.Component
       rel="noopener noreferrer"
       className="social-link flex items-center group hover:text-blue-600 transition-transform duration-200 hover:scale-110"
     >
-      
-      <span className="font-medium">{title}</span>
+      <Icon /> {/* Add space using inline style */}
+      <span style={{ marginLeft: '0.5rem' }} className="font-medium">{title}</span>
     </Link>
   )
 }
