@@ -27,7 +27,7 @@ export default function About() {
             National medalist in competitive programming.<br />
             Machine Learning Consultant @ Cohere on top of school.<br />
             Undying love for problem solving and growth.<br /> <br /> <br />
-            If you're seeing this, I am still editing this page.
+            This website is still under construction.
           </p>
           <div className="flex justify-center space-x-8">
             <SocialLink href="https://linkedin.com/in/dyland06" Icon={Linkedin} title="LinkedIn" />
