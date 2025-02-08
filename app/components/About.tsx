@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Github, Linkedin, FileText, Mail } from "lucide-react"
 import type React from "react" // Added import for React
 import headshot from '../media/headshot.jpg'  // Add this import at the top
 
@@ -29,10 +30,10 @@ export default function About() {
             If you're seeing this, I am still editing this page.
           </p>
           <div className="flex justify-center space-x-8">
-            <SocialLink href="https://linkedin.com/in/dyland06" title="LinkedIn" />
-            <SocialLink href="https://drive.google.com/file/d/1EMA_ukAUA4FnAy09m1yumCqn0i0bbk9t/view?usp=sharing" title="Resume" />
-            <SocialLink href="https://github.com/suoeh" title="GitHub" />
-            <SocialLink href="mailto:dylanydai@gmail.com" title="Email" />
+            <SocialLink href="https://linkedin.com/in/dyland06" Icon={Linkedin} title="LinkedIn" />
+            <SocialLink href="https://drive.google.com/file/d/1EMA_ukAUA4FnAy09m1yumCqn0i0bbk9t/view?usp=sharing" Icon={FileText} title="Resume" />
+            <SocialLink href="https://github.com/suoeh"  Icon={Github} title="GitHub" />
+            <SocialLink href="mailto:dylanydai@gmail.com" Icon={Mail} title="Email" />
           </div>
         </div>
       </div>
