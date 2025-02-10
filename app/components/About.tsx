@@ -23,15 +23,14 @@ export default function About() {
             </div>
           </div>
           <p className="text-lg max-w-2xl text-center leading-relaxed mb-12 font-medium">
-            First year Computer Science student at the University of Waterloo.<br />
-            National medalist in competitive programming.<br />
-            Machine Learning Consultant @ Cohere on top of school.<br />
-            Undying love for problem solving and growth.<br /> <br /> <br />
-            This website is still under construction.
+            Computer Science student at the University of Waterloo.<br />
+            0 to national competitive programming medallist in 1 year.<br />
+            Machine Learning Consultant @ Cohere on top of school.<br /> <br /> <br />
+            See below for more.
           </p>
           <div className="flex justify-center space-x-8">
             <SocialLink href="https://linkedin.com/in/dyland06" Icon={Linkedin} title="LinkedIn" />
-            <SocialLink href="https://drive.google.com/file/d/1EMA_ukAUA4FnAy09m1yumCqn0i0bbk9t/view?usp=sharing" Icon={FileText} title="Resume" />
+            <SocialLink href="/resume.pdf" Icon={FileText} title="Resume" />
             <SocialLink href="https://github.com/suoeh"  Icon={Github} title="GitHub" />
             <SocialLink href="mailto:dylanydai@gmail.com" Icon={Mail} title="Email" />
           </div>

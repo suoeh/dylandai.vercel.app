@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <PageTransition>
       <div className="min-h-screen">
+        <link rel="icon" href="/favicon.ico" />
         <main className="container mx-auto px-4">
           <ParallaxBackground/>
           <About />

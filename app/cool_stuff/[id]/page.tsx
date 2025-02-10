@@ -7,9 +7,9 @@ import PageTransition from "@/app/components/PageTransition"
 
 const projectData = {
   project1: {
-    title: "Project 1",
-    description: "Detailed description of project 1",
-    technologies: ["React", "Node.js", "MongoDB"],
+    title: "Exersize Assister",
+    description: "A web game that lets you create and track your own exersizes. Does accuracy tracking to help with range of motion.",
+    technologies: [],
     images: ["/placeholder.svg"],
     challenges: "Description of challenges faced...",
     solutions: "How the challenges were overcome...",
@@ -61,7 +61,7 @@ export default function ProjectPage() {
             <h2 className="text-2xl font-bold mb-4">Technologies</h2>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (
-                <span key={index} className="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium">
+                <span key={index} className="px-4 py-2 bg-red-300 rounded-full text-sm font-medium">
                   {tech}
                 </span>
               ))}

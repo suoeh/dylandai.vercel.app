@@ -32,17 +32,34 @@ textarea {
   transition: all 0.2s ease;
 }
 
-
 .card {
-  background-color: rgba(247, 244, 242, 0.85);
-  backdrop-filter: blur(8px);
-  border: 0px solid rgba(var(--accent), 0.2);
-  border-radius: 20px;
   transition: all 0.2s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background variations */
+.card.paper-bg {
+  background-image: url('./media/paper.png');
+}
+
+.card.paper2-bg {
+  background-image: url('./media/paper2.png');
+}
+
+.card.paper3-bg {
+  background-image: url('./media/paper3.png');
+}
+
+.card.paper4-bg {
+  background-image: url('./media/paper4.png');
 }
 
 .card:hover {
-  background-color: rgba(255, 253, 252, 0.95);
   transform: translateY(-4px) scale(1.04);
 }
 

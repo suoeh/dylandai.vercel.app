@@ -13,10 +13,10 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "DYLAN DAI!",
+  title: "DYLAN DAI",
   description: "Cool and awesome website :D",
   icons: {
-    icon: '/icon.png', // or '/favicon.png'
+    icon: '/favicon.ico',
   },
 }
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
+      <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           crossOrigin="anonymous"
