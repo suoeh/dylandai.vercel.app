@@ -85,7 +85,6 @@ export default function ProjectPage() {
     </PageTransition>
   )
 }
-
 function Section({ title, content }: { title: string; content: string }) {
   return (
     <div>
