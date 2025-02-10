@@ -85,11 +85,3 @@ export default function ProjectPage() {
     </PageTransition>
   )
 }
-function Section({ title, content }: { title: string; content: string }) {
-  return (
-    <div>
-      <h2 className="text-2xl font-bold mb-4">{title}</h2>
-      <p className="leading-relaxed">{content}</p>
-    </div>
-  )
-}
