@@ -18,6 +18,19 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  openGraph: {
+    images: [
+      {
+        url: '/icon.png',  // Make sure this file exists in your public folder
+        width: 1200,       // Recommended size for OpenGraph images
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/icon.png'],
+  },
 }
 
 export default function RootLayout({

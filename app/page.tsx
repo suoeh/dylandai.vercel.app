@@ -9,12 +9,6 @@ export default function Home() {
     <PageTransition>
       <div className="min-h-screen">
         <link rel="icon" href="/favicon.ico" />
-        <head>
-          <title>Dylan Dai</title>
-          <link rel="icon" href="/favicon.ico" sizes="any" />
-          <meta name="description" content="Dylan Dai's personal website and portfolio" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </head>
         <main className="container mx-auto px-4">
           <ParallaxBackground/>
           <About />
