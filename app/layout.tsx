@@ -21,8 +21,8 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: '/icon.png',  // Make sure this file exists in your public folder
-        width: 1200,       // Recommended size for OpenGraph images
+        url: '/icon.png',
+        width: 1200,
         height: 630,
       },
     ],
