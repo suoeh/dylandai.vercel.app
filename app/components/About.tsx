@@ -7,6 +7,7 @@ import headshot from '../media/headshot.jpg'  // Add this import at the top
 export default function About() {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
       <div className="max-w-4xl mx-auto px-6">
         <div className="flex flex-col items-center mb-12">
           <div className="flex items-center gap-6 mb-6">
@@ -23,7 +24,9 @@ export default function About() {
             </div>
           </div>
           <p className="text-lg max-w-2xl text-center leading-relaxed mb-12 font-medium">
+            Computer Science student at the <Link href="https://uwaterloo.ca/" target="_blank" rel="noopener noreferrer" className="underline">University of Waterloo</Link>.<br />
             0 to national competitive programming medallist in 1 year.<br />
+            Machine Learning Consultant at <Link href="https://cohere.com/" target="_blank" rel="noopener noreferrer" className="underline">Cohere</Link> on top of school.<br /> <br /> <br />
             See below for more.
           </p>
           <div className="flex justify-center space-x-8">
