@@ -23,9 +23,7 @@ export default function About() {
             </div>
           </div>
           <p className="text-lg max-w-2xl text-center leading-relaxed mb-12 font-medium">
-            Computer Science student at the University of Waterloo.<br />
             0 to national competitive programming medallist in 1 year.<br />
-            Machine Learning Consultant @ Cohere on top of school.<br /> <br /> <br />
             See below for more.
           </p>
           <div className="flex justify-center space-x-8">

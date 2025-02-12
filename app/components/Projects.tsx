@@ -5,24 +5,30 @@ export default function Projects() {
     {
       id: "Exercise_Assister",
       title: "Exercise Assister (winner)",
-      description: "Web game that lets you create and track your own exersizes.",
-      tags: ["Hackathon", "Project"],
+      description: "Web game that lets you create and track your own exercizes. Done in 24 hours.",
+      tags: ["Hackathon", "React", "MongoDB Atlas", "LangChain", "Google Cloud Platform"],
       bgStyle: 'paper-bg'
     },
     {
-      id: "project2",
-      title: "Project 2",
-      description: "A brief description of project 2",
-      tags: ["Python", "ML"],
-
+      id: "Music_Tracking_Game",
+      title: "Music Tracking Game (winner)",
+      description: "Game that tracks how accurate your piano skills are using cross correlation. Done in 36 hours.",
+      tags: ["Hackathon", "MATLAB", "Flask", "HTML", "CSS", "JavaScript"],
       bgStyle: 'paper2-bg'
     },
     {
-      id: "project3",
-      title: "Project 3",
-      description: "A brief description of project 3",
-      tags: ["TypeScript", "Next.js"],
+      id: "Waste_Sorter",
+      title: "Image Detecting Waste Sorter",
+      description: " Made an app to use image detection to identify and sort waste. Done in 36 hours.",
+      tags: ["Hackathon", "Google Cloud", "Hugging Face", "Flask", "React Native"],
       bgStyle: 'paper4-bg'
+    },
+    {
+      id: "Voice_Assistant",
+      title: "Voice Automated Assistant",
+      description: "Made an AI-driven tool that interprets voice input using Whisper into computer commands. Done in 36 hours.",
+      tags: ["Hackathon", "Project", "Whisper", "Cohere", "Python"],
+      bgStyle: 'paper3-bg'
     },
   ]
 
@@ -35,13 +41,13 @@ export default function Projects() {
             <Link 
               key={project.id} 
               href={`/projects/${project.id}`} 
-              className={`card p-6 flex flex-col ${project.bgStyle}`}
+              className={`card p-6 flex flex-col aspect-[7/5] ${project.bgStyle}`}
             >
               <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
               <p className="text-gray-600 mb-4 flex-grow">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag, index) => (
-                  <span key={index} className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">
+                  <span key={index} className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
                     {tag}
                   </span>
                 ))}

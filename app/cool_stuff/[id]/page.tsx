@@ -4,6 +4,7 @@ import { useParams } from "next/navigation"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import PageTransition from "@/app/components/PageTransition"
+import ParallaxBackground from "@/app/components/ParallaxBackground"
 
 const projectData = {
   project1: {
@@ -47,16 +48,14 @@ export default function ProjectPage() {
   return (
     <PageTransition>
       <div className="min-h-screen p-8 max-w-4xl mx-auto">
+      <ParallaxBackground/>
         <Link href="/" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-12">
           <ArrowLeft className="w-5 h-5 mr-2" />
           <span>Back</span>
         </Link>
-
         <article className="hoverless-card p-8">
           <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
-
           <p className="text-lg mb-12 leading-relaxed">{project.description}</p>
-
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Technologies</h2>
             <div className="flex flex-wrap gap-2">
