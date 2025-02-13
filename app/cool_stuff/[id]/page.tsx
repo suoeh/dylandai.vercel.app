@@ -1,38 +1,48 @@
 "use client"
 
+import Image from "@/app/media/background.png"
 import { useParams } from "next/navigation"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import PageTransition from "@/app/components/PageTransition"
-import ParallaxBackground from "@/app/components/ParallaxBackground"
 
 const projectData = {
-  project1: {
-    title: "Exersize Assister",
-    description: "A web game that lets you create and track your own exersizes. Does accuracy tracking to help with range of motion.",
-    technologies: [],
-    images: ["/placeholder.svg"],
-    challenges: "Description of challenges faced...",
-    solutions: "How the challenges were overcome...",
-    outcome: "The final results and lessons learned...",
-  },
-  project2: {
-    title: "Project 2",
-    description: "Detailed description of project 2",
-    technologies: ["Python", "Django", "PostgreSQL"],
-    images: ["/placeholder.svg"],
-    challenges: "Description of challenges faced...",
-    solutions: "How the challenges were overcome...",
-    outcome: "The final results and lessons learned...",
-  },
-  project3: {
-    title: "Project 3",
-    description: "Detailed description of project 3",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-    images: ["/placeholder.svg"],
-    challenges: "Description of challenges faced...",
-    solutions: "How the challenges were overcome...",
-    outcome: "The final results and lessons learned...",
+  Contests: {
+    title: "Contests",
+    description:
+    `Canadian Computing Olympiad 2024:
+     - Bronze Medallist
+     - One of 24 students invited to write
+
+    Canadian Computing Competition 2024:
+     - Honor roll group I
+     - Rank 14 of 3497
+     - Score 62/75
+     
+    Euclid 2024:
+     - Award of Distinction (one point off honor roll)
+     - Rank 1028 of 27650
+     - Score 84/100
+     
+    Hypatia 2023:
+     - Honor roll group II
+     - Rank 66 of 7816
+     - Score 38/40
+
+    CSMC 2023:
+     - Honor roll group V
+     - Rank 258 of 16805
+     - Score 46/60
+
+    AMC 12B 2022:
+     - AIME qualifier
+     - Score 81/150
+     
+    COMC 2022:
+     - Top decile
+     - Two points off honor roll
+     - Score 56/80
+    `,
   },
 }
 
@@ -47,43 +57,27 @@ export default function ProjectPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen p-8 max-w-4xl mx-auto">
-      <ParallaxBackground/>
-        <Link href="/" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-12">
-          <ArrowLeft className="w-5 h-5 mr-2" />
-          <span>Back</span>
-        </Link>
-        <article className="hoverless-card p-8">
-          <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
-          <p className="text-lg mb-12 leading-relaxed">{project.description}</p>
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">Technologies</h2>
-            <div className="flex flex-wrap gap-2">
-              {project.technologies.map((tech, index) => (
-                <span key={index} className="px-4 py-2 bg-red-300 rounded-full text-sm font-medium">
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
+      <div
+      className="min-w-screen min-h-screen p-8 mx-auto bg-no-repeat"
+      style={{
+        backgroundImage: `url(${Image.src})`,
+        height: '300%'
+      }}>
+        <div className="max-w-4xl mx-auto flex flex-col">
+          <Link href="/" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-12">
+            <ArrowLeft className="w-5 h-5 mr-2" />
+            <span>Back</span>
+          </Link>
 
-          <div className="space-y-12">
-            <Section title="Challenges" content={project.challenges} />
-            <Section title="Solutions" content={project.solutions} />
-            <Section title="Outcome" content={project.outcome} />
-          </div>
-        </article>
+          <article className="hoverless-card p-8">
+            <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
+
+            <p className="text-lg mb-8 leading-relaxed whitespace-pre-line">{project.description}</p>
+
+            <div className="flex mb-12"></div>
+          </article>
+        </div>
       </div>
     </PageTransition>
   )
 }
-
-function Section({ title, content }: { title: string; content: string }) {
-  return (
-    <div>
-      <h2 className="text-2xl font-bold mb-4">{title}</h2>
-      <p className="leading-relaxed">{content}</p>
-    </div>
-  )
-}
-

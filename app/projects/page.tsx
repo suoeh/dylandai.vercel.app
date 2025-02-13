@@ -54,7 +54,7 @@ export default function Projects() {
                     href={`/projects/${project.id}`} 
                     className={`card p-6 flex flex-col aspect-[7/5] ${project.bgStyle}`}
                   >
-                    <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-center">{project.title}</h3>
                     <p className="text-gray-600 mb-4 flex-grow">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
                         {project.tags.map((tag, index) => (

@@ -7,7 +7,6 @@ import headshot from '../media/headshot.jpg'  // Add this import at the top
 export default function About() {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20">
-      <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
       <div className="max-w-4xl mx-auto px-6">
         <div className="flex flex-col items-center mb-12">
           <div className="flex items-center gap-6 mb-6">

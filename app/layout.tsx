@@ -13,22 +13,28 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "DYLAN DAI",
-  description: "Cool and awesome website :D",
-  icons: {
-    icon: '/favicon.ico',
-  },
+  title: 'DYLAN DAI',
+  description: 'Dylan Dai\'s personal website',
   openGraph: {
+    title: 'DYLAN DAI',
+    description: 'Dylan Dai\'s personal website',
+    url: 'https://dylandai.vercel.app',
+    siteName: 'DYLAN DAI',
     images: [
       {
         url: '/icon.png',
         width: 1200,
         height: 630,
+        alt: 'DYLAN DAI',
       },
     ],
+    locale: 'en-CA',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'DYLAN DAI',
+    description: 'Dylan Dai\'s personal website',
     images: ['/icon.png'],
   },
 }

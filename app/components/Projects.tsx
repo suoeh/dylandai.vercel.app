@@ -26,7 +26,7 @@ export default function Projects() {
     {
       id: "Voice_Assistant",
       title: "Voice Automated Assistant",
-      description: "Made an AI-driven tool that interprets voice input using Whisper into computer commands. Done in 36 hours.",
+      description: "Made an AI-driven tool that interprets voice input into computer commands. Done in 36 hours.",
       tags: ["Hackathon", "Project", "Whisper", "Cohere", "Python"],
       bgStyle: 'paper3-bg'
     },
@@ -43,7 +43,7 @@ export default function Projects() {
               href={`/projects/${project.id}`} 
               className={`card p-6 flex flex-col aspect-[7/5] ${project.bgStyle}`}
             >
-              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+              <h3 className="text-xl font-semibold mb-3 text-center">{project.title}</h3>
               <p className="text-gray-600 mb-4 flex-grow">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag, index) => (

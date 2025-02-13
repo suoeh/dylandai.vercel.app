@@ -9,35 +9,43 @@ import PageTransition from "@/app/components/PageTransition"
 const projectData = {
   Exercise_Assister: {
     title: "Exercise Assister",
-    description: `A web game that lets you create and track your own exersizes. Does accuracy tracking to help with range of motion. Creates exercizes by saving joycon movements. Lets you track the accuracy of your movements to the exersize you do. Persistently saves heartrate and exercise data using Google Cloud Platform and MongoDB.
+    description: `Created a web game that lets you create and track your own exersizes. Does accuracy tracking to help with range of motion. Creates exercizes by saving joycon movements. Lets you track the accuracy of your movements to the exersize you do. Persistently saves heartrate and exercise data using Google Cloud Platform and MongoDB.
+    
+    Done in 24 hours.
     
     Won the DataBricks prize in UTRA Hacks 2025 against 340+ participants.`,
     technologies: ["React", "MongoDB Atlas", "Flask", "Terraform", "AWS", "Arduino", "Python", "HTML", "CSS", "JavaScript", "LangChain", "DataBricks", "Google Cloud Platform"],
-    devpostLink: "https://devpost.com/software/the-exercists?ref_content=user-portfolio&ref_feature=in_progress",
+    devpostLink: "https://devpost.com/software/the-exercists",
     githubLink: "https://github.com/iantang08/UTRAHacks2025",
   },
   Music_Tracking_Game: {
     title: "Music Tracking Game (winner)",
     description: `Developed a musical accuracy tracking game. Implemented cross-correlation to compare two audio waves by extracting vectors of amplitudes. Tracked musical accuracy by adjusting the lag between the two audio waves, providing feedback every 50 milliseconds. Deployed an interactive web platform to retrieve and display game information in real-time. 
     
+    Done in 36 hours.
+    
     Won the Best Use of MATLAB award from over 200 participants.`,
     technologies: ["Hackathon", "MATLAB", "Flask", "HTML", "CSS", "JavaScript"],
-    devpostLink: "https://devpost.com/software/the-exercists?ref_content=user-portfolio&ref_feature=in_progress",
-    githubLink: "https://github.com/iantang08/UTRAHacks2025",
+    devpostLink: "https://dorahacks.io/buidl/13351",
+    githubLink: "https://github.com/m3di0cre3/Any-Jam",
   },
   Waste_Sorter: {
     title: "Image Detecting Waste Sorter",
-    description: " Made an app to use image detection to identify and sort waste. Done in 36 hours.",
+    description: `Created an application using React Native to identify and sort waste with a camera, achieving 90% accuracy in object detection. Utilized Google Cloud’s Vision AI for object detection and classification, sending the data to a manually parsed waste database using JavaScript. Combined embeddings with a 384-dimensional dense vector space using the AI model all-MiniLM-L6-v2, and employed semantic search techniques to classify image input. Response data and associated weights were sent to the REST API of the Flask backend to identify optimal disposal strategies.
+    
+    Done in 36 hours.`,
     technologies: ["Hackathon", "Google Cloud", "Hugging Face", "Flask", "JavaScript", "Python", "React Native"],
-    devpostLink: "https://devpost.com/software/the-exercists?ref_content=user-portfolio&ref_feature=in_progress",
-    githubLink: "https://github.com/iantang08/UTRAHacks2025",
+    devpostLink: "https://devpost.com/software/sorting-the-6ix",
+    githubLink: "https://github.com/suoeh/sortingThe6ix",
   },
   Voice_Assistant: {
     title: "Voice Automated Assistant", 
-    description: "Made an AI-driven tool that interprets voice input using Whisper into computer commands",
-    technologies: ["Hackathon", "Project", "Whisper", "Cohere", "Python"],
-    devpostLink: "https://devpost.com/software/the-exercists?ref_content=user-portfolio&ref_feature=in_progress",
-    githubLink: "https://github.com/iantang08/UTRAHacks2025",
+    description: `Developed an AI-driven tool that interprets voice input using Whisper, into tangible computer commands. Implemented voice-to-text transcription to send information to Cohere’s API for semantic search and command categorization. Utilized Google Cloud's search API for web searches and implemented Python keyboard and mouse macros to execute commands.
+    
+    Done in 36 hours.`,
+    technologies: ["Hackathon", "Project", "Whisper", "Cohere", "Python", "Google Cloud Platform"],
+    devpostLink: "https://devpost.com/software/dylan-dai",
+    githubLink: "https://github.com/suoeh/DylanAI",
   },
 }
 

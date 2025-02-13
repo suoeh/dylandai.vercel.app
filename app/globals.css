@@ -25,8 +25,8 @@ textarea {
 }
 
 .hoverless-card {
-  background-color: rgba(247, 244, 242, 0.85);
-  backdrop-filter: blur(8px);
+  background-color: rgba(250, 246, 243, 0.6);
+  backdrop-filter: blur(7px);
   border: 0px solid rgba(var(--accent), 0.2);
   border-radius: 20px;
   transition: all 0.2s ease;
