@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, FileText, Mail } from "lucide-react"
 import type React from "react" // Added import for React
-import headshot from '../media/headshot.jpg'  // Add this import at the top
+import headshot from '../media/headshot.png'  // Add this import at the top
 
 export default function About() {
   return (
