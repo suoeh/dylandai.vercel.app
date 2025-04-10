@@ -25,7 +25,7 @@ export default function About() {
           <p className="text-lg max-w-2xl text-center leading-relaxed mb-12 font-medium">
             Computer Science student at the <Link href="https://uwaterloo.ca/" target="_blank" rel="noopener noreferrer" className="underline">University of Waterloo</Link>.<br />
             0 to national competitive programming medallist in 1 year.<br />
-            Machine Learning Data Consultant at <Link href="https://cohere.com/" target="_blank" rel="noopener noreferrer" className="underline">Cohere</Link> on top of school.<br /> <br /> <br />
+            Incoming Machine Learning Engineer at <Link href="https://cohere.com/" target="_blank" rel="noopener noreferrer" className="underline">Cohere</Link>.<br /> <br /> <br />
             See below for more.
           </p>
           <div className="flex justify-center space-x-8">
